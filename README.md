@@ -1,3 +1,26 @@
+# 構成
+
+```
+/
+├─ api
+│  └─ main.py
+├─ .gitignore
+└─ README.md
+```
+
+## main.py
+
+```py
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello, FastAPI!"}
+
+```
+
 # FastAPI 仮想環境での実行方法
 
 ## 仮想環境作成
@@ -21,7 +44,7 @@ pip install fastapi uvicorn
 ## アプリケーション実行
 
 ```
-uvicorn main:app --reload
+uvicorn api.main:app --reload
 ```
 
 ## 仮想環境無効化
