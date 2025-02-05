@@ -1,14 +1,25 @@
-# 構成
+# 前提
+
+- Python 実行環境
+
+## ディレクトリ構成
 
 ```
 /
 ├─ api
 │  └─ main.py
+├─ env
 ├─ .gitignore
 └─ README.md
 ```
 
-## main.py
+# FastAPI インストール
+
+```shell
+pip install fastapi[all]
+```
+
+# main.py
 
 ```py
 from fastapi import FastAPI
@@ -34,6 +45,8 @@ python -m venv env
 ```
 .\env\Scripts\activate
 ```
+
+- [セキュリティーポリシーのエラーが発生した場合](#securityError)
 
 ## パッケージインストール
 
@@ -63,3 +76,29 @@ http://127.0.0.1:8000/docs
 
 redoc  
 http://127.0.0.1:8000/redoc
+
+---
+
+# securityError
+
+### 現在のポリシー確認方法
+
+```powershell
+Get-ExecutionPolicy
+```
+
+### 現在のユーザのセキュリティーポリシーを RemoteSigned に変更
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+### セキュリティーポリシーの一覧とスコープ一覧
+
+```powershell
+Get-ExecutionPolicy -List
+```
+
+# 詳細は Zenn の記事に記載
+
+[FastAPI 入門 「Hello FastAPI!」 まで。](https://zenn.dev/aputech/articles/bad52ee80f2cc2)
