@@ -1,4 +1,4 @@
-# 目次
+# :triangular_flag_on_post: 目次
 * [前提](#前提)
     * [ディレクトリ構成](#ディレクトリ構成)
 * [FastAPIインストール](#FastAPIインストール)
@@ -14,7 +14,7 @@
 * [securityError](#securityError)
 * [詳細](#詳細はZennの記事に記載)
 
-# 前提
+# :warning: 前提
 
 - Python 実行環境
 
@@ -95,7 +95,7 @@ http://127.0.0.1:8000/redoc
 
 ---
 
-# securityError
+# :warning: securityError
 
 ### 現在のポリシー確認方法
 
@@ -115,6 +115,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 Get-ExecutionPolicy -List
 ```
 
-# 詳細はZennの記事に記載
+# :airplane: 詳細はZennの記事に記載
 
 [FastAPI 入門 「Hello FastAPI!」 まで。](https://zenn.dev/aputech/articles/bad52ee80f2cc2)
