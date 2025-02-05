@@ -115,6 +115,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 Get-ExecutionPolicy -List
 ```
 
-# 詳細は Zenn の記事に記載
+# 詳細はZennの記事に記載
 
 [FastAPI 入門 「Hello FastAPI!」 まで。](https://zenn.dev/aputech/articles/bad52ee80f2cc2)
